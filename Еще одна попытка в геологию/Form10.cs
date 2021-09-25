@@ -30,6 +30,7 @@ namespace Еще_одна_попытка_в_геологию
             }
         }
 
+        //Check GitHub
         private void Form6_Load(object sender, EventArgs e)
         {
             st = -1;//Я ошибся и никакого создания новой диаграммы пока не планирую.
