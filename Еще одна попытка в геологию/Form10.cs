@@ -15,7 +15,7 @@ namespace Еще_одна_попытка_в_геологию
         public Form10()
         {
             InitializeComponent();
-        }
+        }    
         public new string Name { get; set; }
         public int st { get; set; }
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Еще_одна_попытка_в_геологию
             }
         }
 
-        //Check GitHub2ип
+        //Изменений еще не было
         private void Form6_Load(object sender, EventArgs e)
         {
             st = -1;//Я ошибся и никакого создания новой диаграммы пока не планирую.
