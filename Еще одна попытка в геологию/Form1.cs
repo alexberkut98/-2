@@ -1254,6 +1254,10 @@ namespace Еще_одна_попытка_в_геологию
                             num1++;
                             pictureBox1.Height = A1.Height;
                             pictureBox1.Width = A1.Width;
+                            ImageHeight= A1.Height;
+                            ImageWidth = A1.Width;
+                            B_X = pictureBox1.Location.X;
+                            B_Y = pictureBox1.Location.Y;
                             if (Made == 0)
                             {
                                 Made++;
