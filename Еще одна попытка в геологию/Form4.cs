@@ -5,9 +5,11 @@ namespace Еще_одна_попытка_в_геологию
 {
     public partial class Form4 : Form
     {
+        int ggg = 0;
         public Form4()
         {
             InitializeComponent();
+            Key = -1;
         }
         public double Grad { get; set; }
         public int Form { get; set; }
@@ -23,6 +25,7 @@ namespace Еще_одна_попытка_в_геологию
             if (radioButton.Checked)
             {
                 Grad = 5;
+                ggg = 5;
             }
         }
 
@@ -101,6 +104,15 @@ namespace Еще_одна_попытка_в_геологию
             if (radioButton.Checked)
             {
                 Grad = 22.5;
+            }
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            if (ggg == 5)
+            {
+                Key = -1;
+                Close();
             }
         }
     }
