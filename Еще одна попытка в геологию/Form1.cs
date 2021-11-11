@@ -1331,7 +1331,6 @@ namespace Еще_одна_попытка_в_геологию
                         Image A1 = new Bitmap(img);
                         A1.Save("save/" + "Map" + Convert.ToString(0));
                         pictureBox1.Image = List1.PaintSaved(A1, ref num1);
-                        pictureBox1.Image = List1.PaintSaved(pictureBox1.Image, ref num1);
                     }
                 }
             }
@@ -1359,7 +1358,6 @@ namespace Еще_одна_попытка_в_геологию
                     Image A1 = new Bitmap(img);
                     A1.Save("save/" + "Map" + Convert.ToString(0));
                     pictureBox1.Image = List1.PaintSaved(A1, ref num1);
-                    pictureBox1.Image = List1.PaintSaved(pictureBox1.Image, ref num1);
                 }
             }
         }
