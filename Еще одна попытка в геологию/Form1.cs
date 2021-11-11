@@ -728,8 +728,13 @@ namespace Еще_одна_попытка_в_геологию
 
                         //Если мы создаем новую диаграмму, надо зафиксировать работу над предыдущей 
                         //то.е. закрасить ее прямые синим
-                        num1 = 0;
-                        pictureBox1.Image = List1.PaintSaved(pictureBox1.Image, ref num1);
+                        num1 = 1;
+                        var bytes = System.IO.File.ReadAllBytes("save/" + "Map" + Convert.ToString(0));
+                        var ms = new System.IO.MemoryStream(bytes);
+                        var img = Image.FromStream(ms);
+                        Image A1 = new Bitmap(img);
+                        A1.Save("save/" + "Map" + Convert.ToString(0));
+                        pictureBox1.Image = List1.PaintSaved(A1, ref num1);
                         Z = 0;
                         button13.BackColor = Color.LightGray;
                     }
@@ -1319,7 +1324,13 @@ namespace Еще_одна_попытка_в_геологию
 
                         //Если мы меняем диаграмму, надо зафиксировать работу над текущей 
                         //то.е. закрасить ее прямые синим
-                        num1 = 0;
+                        num1 = 1;
+                        var bytes = System.IO.File.ReadAllBytes("save/" + "Map" + Convert.ToString(0));
+                        var ms = new System.IO.MemoryStream(bytes);
+                        var img = Image.FromStream(ms);
+                        Image A1 = new Bitmap(img);
+                        A1.Save("save/" + "Map" + Convert.ToString(0));
+                        pictureBox1.Image = List1.PaintSaved(A1, ref num1);
                         pictureBox1.Image = List1.PaintSaved(pictureBox1.Image, ref num1);
                     }
                 }
@@ -1341,7 +1352,13 @@ namespace Еще_одна_попытка_в_геологию
 
                     //Если мы создаем новую диаграмму, надо зафиксировать работу над предыдущей 
                     //то.е. закрасить ее прямые синим
-                    num1 = 0;
+                    num1 = 1;
+                    var bytes = System.IO.File.ReadAllBytes("save/" + "Map" + Convert.ToString(0));
+                    var ms = new System.IO.MemoryStream(bytes);
+                    var img = Image.FromStream(ms);
+                    Image A1 = new Bitmap(img);
+                    A1.Save("save/" + "Map" + Convert.ToString(0));
+                    pictureBox1.Image = List1.PaintSaved(A1, ref num1);
                     pictureBox1.Image = List1.PaintSaved(pictureBox1.Image, ref num1);
                 }
             }

@@ -378,8 +378,6 @@ namespace Еще_одна_попытка_в_геологию
                 i = -5;
                 if (current.Name == Name)
                 {
-                    if (Nx1 == 0 && Ny1 == 0 && Nx2 == 0 && Ny2 == 0)
-                        x1 = x1;
                     if (ch == 0)
                         current.RemoveMidle(x1, y1, x2, y2);
                     if (st == 1)
